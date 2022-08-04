@@ -35,6 +35,14 @@ public class EmployeeController {
 		
 		
 		return list;
+	}
+	
+	@GetMapping(value="/getbydept" , produces="application/json")
+	public Employee getbyEdept() {
+		
+		Employee employee = serviceIMPL.getbydept();
+		
+		return employee;
 		
 		
 	}
