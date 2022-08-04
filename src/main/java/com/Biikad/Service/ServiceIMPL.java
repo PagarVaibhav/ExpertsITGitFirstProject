@@ -23,7 +23,7 @@ public class ServiceIMPL {
 		return employee2;
 		
 		}
-	
+
 	public List <Employee> getalldata() {
 		
 		List<Employee> list = employeeRepo.findAll();
@@ -32,5 +32,14 @@ public class ServiceIMPL {
 		
 	}
 	
+	public Employee getbydept() {
+		
+		Employee edept = employeeRepo.findByEdept("Devlopment");
+		
+		return edept;
+		
+	}
+	
 	
 }
+

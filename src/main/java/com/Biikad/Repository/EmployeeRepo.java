@@ -11,6 +11,6 @@ import com.Biikad.Model.Employee;
 @Repository
 public interface EmployeeRepo extends JpaRepository<Employee, Serializable> {
 	
-	public Employee findByDept (String dept);
+	public Employee findByEdept (String edept);
 
 }

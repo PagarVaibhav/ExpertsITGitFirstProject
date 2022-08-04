@@ -28,7 +28,7 @@ public class EmployeeController {
 		
 		
 	}
-	@GetMapping(value="/getData" , produces="/application/json")
+	@GetMapping(value="/getData" , produces="application/json")
 	public List <Employee> getalldata(){
 		
 		List<Employee> list = serviceIMPL.getalldata();
