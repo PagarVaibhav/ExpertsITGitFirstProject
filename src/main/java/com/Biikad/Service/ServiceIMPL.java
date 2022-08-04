@@ -1,5 +1,7 @@
 package com.Biikad.Service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -21,6 +23,14 @@ public class ServiceIMPL {
 		return employee2;
 		
 		}
+	
+	public List <Employee> getalldata() {
+		
+		List<Employee> list = employeeRepo.findAll();
+		
+		return list;
+		
+	}
 	
 	
 }
